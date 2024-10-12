@@ -43,6 +43,7 @@ import {
 	GuildResponse,
 	QuestsResponse,
 } from './responses/index'
+import { mapResponseToV2 } from './responses/skyblock/map_v2'
 
 /** The base url of the Hypixel API with a trailing slash */
 const BASE_URL = 'https://api.hypixel.net/'
@@ -120,7 +121,7 @@ export interface Requests {
 		options: {}
 		response: Response<VanityCompanionsResponse>
 	}
-	'skyblock/profiles': {
+	'v2/skyblock/profiles': {
 		options: {
 			uuid: string
 			key: string
@@ -133,7 +134,7 @@ export interface Requests {
 			| ThrottleResponse
 		>
 	}
-	'skyblock/profile': {
+	'v2/skyblock/profile': {
 		options: {
 			profile: string
 			key: string
@@ -362,6 +363,10 @@ export const request = async <P extends keyof Requests>(
 		headers: requestHeaders,
 	})
 	const data = await res.json()
+
+	if (path.substring(0, 2) === 'v2') {
+		mapResponseToV2(path, data)
+	}
 
 	const headers: Record<string, string | number> = {}
 	for (const [name, value] of res.headers.entries()) {
