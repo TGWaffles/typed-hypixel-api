@@ -2,7 +2,7 @@
   "name": "typed-hypixel-api",
   "version": "1.8.0",
   "main": "build/index.js",
-  "types": "build/index.d.js",
+  "types": "build/index.d.ts",
   "repository": "https://github.com/skyblockstats/typed-hypixel-api.git",
   "author": "mat <github@matdoes.dev>",
   "license": "MIT",
