@@ -48,43 +48,43 @@ const startTime = Date.now();
 		key: process.env.API_KEY,
 		uuid: 'e471665f71014891bef337c8d22cf04b'
 	}, true))
-	await testData('SkyBlockProfilesResponse', await request('skyblock/profiles', {
+	await testData('SkyBlockProfilesResponse', await request('v2/skyblock/profiles', {
 		uuid: '26398ec782e5440cbcbb94c58b8b60a2',
 		key: process.env.API_KEY
 	}, true))
-	await testData('SkyBlockProfilesResponse', await request('skyblock/profiles', {
+	await testData('SkyBlockProfilesResponse', await request('v2/skyblock/profiles', {
 		uuid: '16751f79c0b14e53a0b590d31fc1d80d',
 		key: process.env.API_KEY
 	}, true))
-	await testData('SkyBlockProfilesResponse', await request('skyblock/profiles', {
+	await testData('SkyBlockProfilesResponse', await request('v2/skyblock/profiles', {
 		uuid: '974b2a9e0d6d41819dd18a05fb228965',
 		key: process.env.API_KEY
 	}, true))
-	await testData('SkyBlockProfilesResponse', await request('skyblock/profiles', {
+	await testData('SkyBlockProfilesResponse', await request('v2/skyblock/profiles', {
 		uuid: '28667672039044989b0019b14a2c34d6',
 		key: process.env.API_KEY
 	}, true))
-	await testData('SkyBlockProfilesResponse', await request('skyblock/profiles', {
+	await testData('SkyBlockProfilesResponse', await request('v2/skyblock/profiles', {
 		uuid: 'e07f44d84fb8424cbb0b15dc542266f6',
 		key: process.env.API_KEY
 	}, true))
-	await testData('SkyBlockProfilesResponse', await request('skyblock/profiles', {
+	await testData('SkyBlockProfilesResponse', await request('v2/skyblock/profiles', {
 		uuid: '94c2516fe3224cec87084902314728e6',
 		key: process.env.API_KEY
 	}, true))
-	await testData('SkyBlockProfilesResponse', await request('skyblock/profiles', {
+	await testData('SkyBlockProfilesResponse', await request('v2/skyblock/profiles', {
 		uuid: '1b524fe49c5c4fe599840bdd7c790bf0',
 		key: process.env.API_KEY
 	}, true))
-	await testData('SkyBlockProfilesResponse', await request('skyblock/profiles', {
+	await testData('SkyBlockProfilesResponse', await request('v2/skyblock/profiles', {
 		uuid: 'fb178c95d152459eb8dcefd127894e38',
 		key: process.env.API_KEY
 	}, true))
-	await testData('SkyBlockProfilesResponse', await request('skyblock/profiles', {
+	await testData('SkyBlockProfilesResponse', await request('v2/skyblock/profiles', {
 		uuid: '20934ef9488c465180a78f861586b4cf',
 		key: process.env.API_KEY
 	}, true))
-	await testData('SkyBlockProfilesResponse', await request('skyblock/profiles', {
+	await testData('SkyBlockProfilesResponse', await request('v2/skyblock/profiles', {
 		uuid: '78800595c0e9445595ac4a93fa2a3a4c',
 		key: process.env.API_KEY
 	}, true))
