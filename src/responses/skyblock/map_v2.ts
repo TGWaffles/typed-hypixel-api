@@ -1374,13 +1374,17 @@ function mapProfileToV2(profile: any): void {
 
 export function mapResponseToV2(path: string, response: any): void {
 	if (path === 'v2/skyblock/profile') {
+		if (response.profile == null) {
+			// Profile not found
+			return;
+		}
 		mapProfileToV2(response.profile);
 		return;
 	}
 	if (path !== 'v2/skyblock/profiles') {
 		return;
 	}
-	if (!response.profiles) {
+	if (response.profiles == null) {
 		return;
 	}
 	for (const profile of response.profiles) {
